@@ -25,11 +25,11 @@ init_config() {
     fi
 
     # dwm-autostart
-    DWM_AUTOSTART=$(cat /opt/dwm-distrotube-git/autostart.sh)
+    DWM_AUTOSTART=$(cat /opt/dwm-distrotube/autostart.sh)
     if [[ $DWM_AUTOSTART == *"Pictures"* ]]; then
         echo "${YELLOW}already has dwm-autostart configed, skip it${RESET}"
     else
-        cat ~/ohmyarch/config/dwm-autostart | sudo tee -a /opt/dwm-distrotube-git/autostart.sh
+        cat ~/ohmyarch/config/dwm-autostart | sudo tee -a /opt/dwm-distrotube/autostart.sh
     fi
 
     # zshrc

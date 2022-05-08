@@ -49,6 +49,9 @@ elif [[ $1 == "autojump" ]]; then
     install_autojump
 elif [[ $1 == "neovim" ]]; then
     init_neovim
+elif [[ $1 == "config" ]]; then
+        dispatch_scripts
+        init_config
 else
     config_arch_cn
     install_dependency

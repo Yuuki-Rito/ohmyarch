@@ -7,7 +7,7 @@ dispatch_scripts () {
     cp screenshot $HOME/.local/bin/screenshot
 
     # dwmblocks
-    sudo rm /opt/dwmblocks-distrotube-git/scripts/volume
-    sudo cp dwmblocks-volume /opt/dwmblocks-distrotube-git/scripts/volume
+    sudo rm /opt/dwmblocks-distrotube/scripts/volume
+    sudo cp dwmblocks-volume /opt/dwmblocks-distrotube/scripts/volume
     echo "${GREEN}dispatch scripts success${RESET}"
 }
